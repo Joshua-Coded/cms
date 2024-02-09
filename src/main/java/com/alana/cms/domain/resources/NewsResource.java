@@ -38,7 +38,7 @@ public class NewsResource {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<News> updateNews(@PathVariable("id") String id,NewsRequest news){
+    public ResponseEntity<News> updateNews(@PathVariable("id") String id, NewsRequest news){
         return new ResponseEntity<>(new News(), HttpStatus.OK);
     }
 
