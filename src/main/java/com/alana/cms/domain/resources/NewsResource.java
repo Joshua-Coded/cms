@@ -41,7 +41,7 @@ public class NewsResource {
     public ResponseEntity<News> updateNews(@PathVariable("id") String id,NewsRequest news){
         return new ResponseEntity<>(new News(), HttpStatus.OK);
     }
-    
+
     @GetMapping(value = "/{id}/review/{userId}")
     public ResponseEntity<Review> review(@PathVariable("id") String id, @PathVariable("userId") String userId){
         return ResponseEntity.ok(new Review());
