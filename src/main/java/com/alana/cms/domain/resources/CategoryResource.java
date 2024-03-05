@@ -31,7 +31,7 @@ public class CategoryResource {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void removeCategory(@PathVariable("id"), String id) {
+    public void removeCategory(@PathVariable("id") String id) {
 
     }
 
